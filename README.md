@@ -12,7 +12,7 @@ This project involves analyzing a public [dataset](https://www.kaggle.com/datase
 ### 1. Data Ingestion
 The data ingestion phase involved downloading CSV files from Kaggle and defining a logic model schema for the dataset. The schema includes primary keys, foreign keys and relations.
 
-![[Brazilian_E-Commerc_Diagram.jpg]]
+![Brazilian_E-Commerc_Diagram.jpg](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Brazilian_E-Commerc_Diagram.jpg?raw=true)
 
 ---
 ### 2. Data Quality Analysis, Cleaning and Transformation
@@ -41,7 +41,8 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
  Duplicates are only checked for tables with values of primary key or not nullable in the database. 
  
  Just one table was found with this problem: **order_reviews**. The indexes of the duplicated data were extracted to later inspect them.
- ![[Order_reviews_Duplicates.png]]
+ 
+ ![Order_reviews_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Order_reviews_Duplicates.png?raw=true)
 
 As seen in the image, duplicated **review_id** values contains the same data in both rows, so the decision was to keep the first found row.
 
