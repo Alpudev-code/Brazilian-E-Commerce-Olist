@@ -42,9 +42,9 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
  
  The tables **geolocation** and **order_reviews** seems to have duplicates. The indexes of the duplicated data were extracted to later inspect them.
  
- ![Order_reviews_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Order_reviews_Duplicates.png?raw=true)
-
 ![Geolocation_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Geolocation_Duplicates.png?raw=true)
+
+![Order_reviews_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Order_reviews_Duplicates.png?raw=true)
 
 ---
 ## 3. Data Cleaning and Transformation
