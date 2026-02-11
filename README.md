@@ -15,7 +15,7 @@ The data ingestion phase involved downloading CSV files from Kaggle and defining
 ![Brazilian_E-Commerc_Diagram.jpg](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Brazilian_E-Commerc_Diagram.jpg?raw=true)
 
 ---
-## 2. Data Quality Analysis, Cleaning and Transformation
+## 2. Data Quality Analysis
 Data quality analysis was performed to identify issues such as missing values, invalid dates format and duplicates.
 ### Date fields
 Upon inspection, there is no need for dates management as they come already in a valid format.
@@ -44,14 +44,11 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
  
  ![Order_reviews_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Order_reviews_Duplicates.png?raw=true)
 
-As seen in the image, duplicated **review_id** values contains the same data in both rows, so the decision was to keep the first found row.
-
 ---
 ## 3. Data Cleaning and Transformation
 ### Missing data
-In **order_reviews** in **orders** table, it's possible to have orders without comments so values can stay null.
-For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
-#### Duplicates
+In **order_reviews** in **orders** table, it's possible to have orders without comments so values can stay null. For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
+### Duplicates
 Duplicated **review_id** values from **order_reviews** table contains the same data in both rows, so the decision was to keep the first found row.
 
 ## Technology stack:
