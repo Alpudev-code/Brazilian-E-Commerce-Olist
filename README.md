@@ -9,17 +9,17 @@ This project involves analyzing a public [dataset](https://www.kaggle.com/datase
 3. Data Cleaning and Transformation
 
 ---
-### 1. Data Ingestion
+## 1. Data Ingestion
 The data ingestion phase involved downloading CSV files from Kaggle and defining a logic model schema for the dataset. The schema includes primary keys, foreign keys and relations.
 
 ![Brazilian_E-Commerc_Diagram.jpg](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Brazilian_E-Commerc_Diagram.jpg?raw=true)
 
 ---
-### 2. Data Quality Analysis, Cleaning and Transformation
+## 2. Data Quality Analysis, Cleaning and Transformation
 Data quality analysis was performed to identify issues such as missing values, invalid dates format and duplicates.
-#### Date fields
+### Date fields
 Upon inspection, there is no need for dates management as they come already in a valid format.
-#### Missing data
+### Missing data
 There are a couple of tables with missing values in one or more columns:
 
 ```
@@ -37,7 +37,7 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
  
  - **order_reviews** values can be null, it's possible to have orders without comments.
  - **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
-#### Duplicates
+### Duplicates
  Duplicates are only checked for tables with values of primary key or not nullable in the database. 
  
  Just one table was found with this problem: **order_reviews**. The indexes of the duplicated data were extracted to later inspect them.
@@ -47,8 +47,8 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
 As seen in the image, duplicated **review_id** values contains the same data in both rows, so the decision was to keep the first found row.
 
 ---
-### 3. Data Cleaning and Transformation
-#### Missing data
+## 3. Data Cleaning and Transformation
+### Missing data
 In **order_reviews** in **orders** table, it's possible to have orders without comments so values can stay null.
 For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
 #### Duplicates
