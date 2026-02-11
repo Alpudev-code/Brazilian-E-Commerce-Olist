@@ -40,16 +40,18 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
 ### Duplicates
  Duplicates are only checked for tables with values of primary key or not nullable in the database. 
  
- Just one table was found with this problem: **order_reviews**. The indexes of the duplicated data were extracted to later inspect them.
+ The tables **geolocation** and **order_reviews** seems to have duplicates. The indexes of the duplicated data were extracted to later inspect them.
  
  ![Order_reviews_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Order_reviews_Duplicates.png?raw=true)
+
+![Geolocation_Duplicates.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Geolocation_Duplicates.png?raw=true)
 
 ---
 ## 3. Data Cleaning and Transformation
 ### Missing data
-In **order_reviews** in **orders** table, it's possible to have orders without comments so values can stay null. For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
+In **order_reviews** in **orders** table, it is possible to have orders without comments so values can stay null. For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
 ### Duplicates
-Duplicated **review_id** values from **order_reviews** table contains the same data in both rows, so the decision was to keep the first found row.
+Duplicated values from **geolocation** and **order_reviews** tables contains their own repeated data, so the decision was to keep the first found row.
 
 ## Technology stack:
 - Python
