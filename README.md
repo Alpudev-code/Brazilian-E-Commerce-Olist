@@ -78,9 +78,9 @@ These should be implemented as:
 - Materialized tables
 ## 5. Analysis
 
-![KPIs.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/KPIs.png?raw=true)
-
 ## 6. Business Intelligence
+
+![KPIs.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/KPIs.png?raw=true)
 
 ## Technology stack:
 - Python
