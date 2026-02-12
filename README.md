@@ -4,9 +4,13 @@ This project involves analyzing a public [dataset](https://www.kaggle.com/datase
 
 ---
 ## Table of contents
+
 1. Data Ingestion
 2. Data Quality Analysis
 3. Data Cleaning and Transformation
+4. Feature engineering (WIP)
+5. Analysis (WIP)
+6. Business Intelligence (WIP)
 
 ---
 ## 1. Data Ingestion
@@ -52,6 +56,34 @@ Nans in: products | Column: product_width_cm. | Quantity: 2
 In **order_reviews** in **orders** table, it is possible to have orders without comments so values can stay null. For **products** with no category are assigned to "Unknown", the other fields values are set to -1 as a way to identify them in consults.
 ### Duplicates
 Duplicated values from **geolocation** and **order_reviews** tables contains their own repeated data, so the decision was to keep the first found row.
+## 4. Feature engineering
+**Order-level**
+- Delivery delay (actual vs estimated)
+- Order lifecycle duration
+- Is_late (boolean)
+
+**Customer-level**
+- Total lifetime value (LTV)
+- Average order value
+- Repeat customer flag
+- Days since last purchase
+
+**Product-level**
+- Revenue contribution
+- Sales velocity
+- Review score averages
+
+These should be implemented as:
+- SQL views, or
+- Materialized tables
+## 5. Analysis
+Examples aligned with UCM content:
+- Descriptive statistics by category
+- Time-series trends (monthly revenue, orders)
+- Correlation between delivery delay and review score
+- Regional performance differences
+- Hypothesis testing (e.g., late delivery → lower ratings)
+## 6. Business Intelligence
 
 ## Technology stack:
 - Python

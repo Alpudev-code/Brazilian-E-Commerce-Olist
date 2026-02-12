@@ -1,0 +1,9 @@
+delete from product_category_name_translation;
+delete from order_items;
+delete from order_payments;
+delete from order_reviews;
+delete from orders;
+delete from products;
+delete from customers;
+delete from sellers;
+delete from geolocation;
