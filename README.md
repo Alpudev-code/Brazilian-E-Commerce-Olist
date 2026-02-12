@@ -77,12 +77,9 @@ These should be implemented as:
 - SQL views, or
 - Materialized tables
 ## 5. Analysis
-Examples aligned with UCM content:
-- Descriptive statistics by category
-- Time-series trends (monthly revenue, orders)
-- Correlation between delivery delay and review score
-- Regional performance differences
-- Hypothesis testing (e.g., late delivery → lower ratings)
+
+![KPIs.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/KPIs.png?raw=true)
+
 ## 6. Business Intelligence
 
 ## Technology stack:
