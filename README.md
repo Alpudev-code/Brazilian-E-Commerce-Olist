@@ -80,7 +80,8 @@ These should be implemented as:
 
 ## 6. Business Intelligence
 
-![KPIs.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/KPIs.png?raw=true)
+![BI_KPIs.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/BI_KPIs.png?raw=true)
+![BI_Distribution_Maps.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/BI_Distribution_Maps.png?raw=true)
 
 ## Technology stack:
 - Python
