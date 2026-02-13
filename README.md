@@ -57,25 +57,16 @@ In **order_reviews** in **orders** table, it is possible to have orders without 
 ### Duplicates
 Duplicated values from **geolocation** and **order_reviews** tables contains their own repeated data, so the decision was to keep the first found row.
 ## 4. Feature engineering
-**Order-level**
-- Delivery delay (actual vs estimated)
-- Order lifecycle duration
-- Is_late (boolean)
+Create new data fields to improve the analysis scope and quality.
 
 **Customer-level**
-- Total lifetime value (LTV)
+- Profit based Total lifetime value (LTV)
 - Average order value
-- Repeat customer flag
+- Average payment value
 - Days since last purchase
 
-**Product-level**
-- Revenue contribution
-- Sales velocity
-- Review score averages
+![FeatureEngineering.png](https://github.com/Alpudev-code/Brazilian-E-Commerce-Olist/blob/dev/Readme/Customers_FeatureEngineering.png?raw=true)
 
-These should be implemented as:
-- SQL views, or
-- Materialized tables
 ## 5. Analysis
 
 ## 6. Business Intelligence
