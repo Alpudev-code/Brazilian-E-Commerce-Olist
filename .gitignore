@@ -1,0 +1,4 @@
+**/*.db
+**/*.csv
+**/*.sqbpro
+.ipynb_checkpoints
